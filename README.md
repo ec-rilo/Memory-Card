@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<h1 align="center">Movie Memory</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center" width="100%">
+    <img src="#">
+</p>
 
-## Available Scripts
+<h4 align="center">Built for testing memory retention!</h4>
+<p align="center"> <a href="#">[Redacted]</a></p>
 
-In the project directory, you can run:
+## Features
+This app allows the user to click on a unique movie title per game. It will keep the current score and the best score
+per game. There is also use of the [TMDb API](https://www.themoviedb.org/documentation/api) for getting movie covers that 
+populate the game. 
 
-### `npm start`
+## Motivation and Story
+With this project I wanted to refresh my knowledge with API's and the respsective JavaScript needed to use them. As well
+as organizational skills needed prior to even touching code. Throughout the project you will see many tests using the 
+react-testing-library and jest as well as dynamic item creation with react. This project is also my first deep dive into
+using hooks and functional components heavily as I wanted to refine the skill of using them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Code Styles
+This project follows the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Eslint and Prettier were also used in this project.
 
-### `npm test`
+## Tech Stack
+**Built with**
+- [React](https://reactjs.org/)
+- [Prettier](https://prettier.io/)
+- [ESlint](https://eslint.org/)
+- [Babel](https://babeljs.io/)
+- [Webpack](https://webpack.js.org/)
+- [Jest](https://jestjs.io/docs/getting-started)
+- [npm](https://www.npmjs.com/)
+- [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/)
+- [create-react-app](https://create-react-app.dev/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Repository Installation
+```
+$ git clone [redacted]
+```
 
-### `npm run build`
+## Tests
+All tests are run using Jest and react-testing-library.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install Jest please follow the [Getting Started Page](https://jestjs.io/docs/getting-started) on the
+Jest website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To install react-testing-library type `npm install --save-dev @testing-library/dom` in the terminal.
+To learn more please read the docs at <a href="https://testing-library.com/docs/react-testing-library/intro/">testing-library.com/react</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please note, if using create-react-app - both Jest and react-testing-library will have been installed for you.
 
-### `npm run eject`
+## Credits
+I'd like to thank the team that created the [TMDb API](https://www.themoviedb.org/documentation/api) for letting many of us use a version of 
+the API for free and I'd also like to thank my Discord Community as always, they have helped me with many questions that I have had and cleared 
+up many confirmation questions as well. I couldn't do it without them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
+**Edgar Carrillo**
+</br>
+- [Linkedin](https://www.linkedin.com/in/ecarrillo046/)
+- [Github](https://github.com/ec-rilo)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">Project created by <a href="https://github.com/ec-rilo">Edgar Carrillo</a></p>
