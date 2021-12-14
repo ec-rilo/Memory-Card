@@ -1,0 +1,39 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+/* Mobile - Smallest Screen */
+@media (max-width: 360px) {
+  /*-- -------------------------- -->
+	<---           HEADER           -->
+	<--- -------------------------- -*/
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    color: var(--secondary-clr);
+  }
+
+  .logo-container {
+    font-size: 2rem;
+    font-family: var(--primary-fnt-bld);
+  }
+
+  .full-text {
+    display: none;
+  }
+
+  .short-text {
+    display: block;
+    color: var(--tertiary-clr);
+  }
+
+  .score-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--primary-fnt-bld);
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+}
