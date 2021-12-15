@@ -37,6 +37,10 @@
     padding-top: 30px;
   }
 
+  /*-- -------------------------- -->
+	<---            BODY            -->
+	<--- -------------------------- -*/
+
   .cards-container {
     display: flex;
     flex-direction: row;
