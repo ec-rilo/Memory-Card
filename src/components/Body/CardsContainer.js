@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import movieData from './Logic/TMDb';
+import shuffle from './Logic/Algorithms/shuffle';
 
 const CardsContainer = () => {
   const [cards, setCards] = useState([]);
@@ -19,10 +20,23 @@ const CardsContainer = () => {
     }
   });
 
+  const shuffleCards = () => {
+    const tempArr = shuffle(cards);
+    setCards([...tempArr]);
+    return;
+  };
+
   return (
     <section className="cards-container">
       {cards.map((card) => {
-        return <Card key={card.key} src={card.src} alt={card.alt} />;
+        return (
+          <Card
+            shuffleCards={shuffleCards}
+            key={card.key}
+            src={card.src}
+            alt={card.alt}
+          />
+        );
       })}
     </section>
   );
