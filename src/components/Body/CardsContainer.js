@@ -6,10 +6,16 @@ import shuffle from './Logic/Algorithms/shuffle';
 const CardsContainer = () => {
   const [cards, setCards] = useState([]);
 
+  const createCard = async (index) => {
+    const obj = await movieData.getPosterData(index);
+    obj.selected = false;
+    return obj;
+  };
+
   const addCards = async () => {
     const tempArr = [];
     for (let i = 0; i < 12; ++i) {
-      const obj = await movieData.getPosterData(i);
+      const obj = await createCard(i);
       tempArr.push(obj);
     }
     setCards(tempArr);
@@ -35,6 +41,7 @@ const CardsContainer = () => {
             key={card.key}
             src={card.src}
             alt={card.alt}
+            uniqid={card.uniqid}
           />
         );
       })}
