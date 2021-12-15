@@ -59,4 +59,16 @@
   .card > img {
     display: block;
   }
+
+  /*-- -------------------------- -->
+	<---           FOOTER           -->
+	<--- -------------------------- -*/
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: var(--secondary-clr);
+  }
 }
