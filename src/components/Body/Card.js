@@ -5,7 +5,11 @@ const Card = (props) => {
   // populate an image within it from a prop passed down to it
   return (
     <div className="card">
-      <img src={props.src} alt={props.alt}></img>
+      <img
+        src={props.src}
+        alt={props.alt}
+        onClick={() => props.shuffleCards()}
+      ></img>
     </div>
   );
 };

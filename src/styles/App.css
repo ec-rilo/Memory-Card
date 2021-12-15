@@ -36,4 +36,39 @@
     font-size: 2rem;
     padding-top: 30px;
   }
+
+  /*-- -------------------------- -->
+	<---            BODY            -->
+	<--- -------------------------- -*/
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card > img {
+    display: block;
+  }
+
+  /*-- -------------------------- -->
+	<---           FOOTER           -->
+	<--- -------------------------- -*/
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: var(--secondary-clr);
+  }
 }
