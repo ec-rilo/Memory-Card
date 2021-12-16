@@ -30,8 +30,7 @@ describe('gameboard() tests', () => {
     expect(gbreceiveHit2.isDoubleHit()).toBeTruthy();
   });
 
-  test('function reset() resets the cardsArr to an empty array and doubleHit to false', () => {
-    expect(gbReset.getCardsArr()).toEqual([]);
+  test('function reset() resets doubleHit to false', () => {
     expect(gbReset.getDoubleHit()).toBeFalsy();
   });
 
