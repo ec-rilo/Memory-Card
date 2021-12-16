@@ -3,7 +3,7 @@ import Card from './Card';
 import movieData from './Logic/TMDb';
 import shuffle from './Logic/Algorithms/shuffle';
 import game from '../../Logic/game';
-import MediaQuery, { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 const CardsContainer = () => {
   const [cards, setCards] = useState([]);
