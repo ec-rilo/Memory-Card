@@ -1,0 +1,40 @@
+/*-- -------------------------- -->
+<---         CORE STYLES        -->
+<--- -------------------------- -*/
+
+@font-face {
+  font-family: 'Roboto-Condensed-Reg';
+  src: url('../fonts/Roboto-Condensed/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Condensed-Bld';
+  src: url('../fonts//Roboto-Condensed/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+:root {
+  /* Colors */
+  --primary-clr: #000;
+  --secondary-clr: #fff;
+  --tertiary-clr: #e50914;
+
+  /* Fonts */
+  --primary-fnt: 'Roboto-Condensed-Reg';
+  --primary-fnt-bld: 'Roboto-Condensed-Bld';
+  --secondary-fnt: 'Roboto';
+}
+
+body {
+  background-color: var(--primary-clr);
+  font-family: var(--secondary-fnt);
+}
+
+a {
+  color: var(--tertiary-clr);
+  text-decoration: none;
+}
