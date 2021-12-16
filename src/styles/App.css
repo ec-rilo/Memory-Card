@@ -31,7 +31,8 @@
 
   .score-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
     font-family: var(--primary-fnt-bld);
     font-size: 2rem;
     padding-top: 30px;
@@ -130,9 +131,11 @@
 	<--- -------------------------- -*/
 
   footer {
+    position: relative;
+    bottom: auto;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 0.7rem;
     color: var(--secondary-clr);
   }
