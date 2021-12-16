@@ -20,11 +20,12 @@
   }
 
   .full-text {
-    display: none;
+    display: block;
+    color: var(--tertiary-clr);
   }
 
   .short-text {
-    display: block;
+    display: none;
     color: var(--tertiary-clr);
   }
 
