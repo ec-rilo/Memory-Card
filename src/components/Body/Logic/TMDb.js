@@ -32,8 +32,8 @@ const movieData = (() => {
     const data = await getData();
     const imgURL = formatURLRequest(data, index);
     const imgAlt = data.data.results[index].original_title;
-
-    return { key: uniqid(), src: imgURL, alt: imgAlt };
+    const key = uniqid();
+    return { key: key, src: imgURL, alt: imgAlt, uniqid: key };
   };
 
   return { getPosterData };

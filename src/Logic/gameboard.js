@@ -36,17 +36,11 @@ const gameboard = (() => {
     });
   };
 
-  const reset = () => {
-    cardsArr = [];
-    doubleHit = false;
-  };
-
   return {
     allSelected,
     updateCardsArr,
     receiveHit,
     isDoubleHit,
-    reset,
     resetHits,
   };
 })();

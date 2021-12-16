@@ -1,4 +1,5 @@
 import React from 'react';
+import Scoreboard from './Scoreboard';
 
 const HeaderContent = () => {
   return (
@@ -7,10 +8,7 @@ const HeaderContent = () => {
         <span className="full-text">MOVIE MEMORY</span>
         <span className="short-text">MM</span>
       </h1>
-      <div className="score-container">
-        <p>SCORE: 0</p>
-        <p>BEST: 0</p>
-      </div>
+      <Scoreboard />
     </header>
   );
 };

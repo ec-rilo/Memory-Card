@@ -1,15 +1,10 @@
 import React from 'react';
 
 const Card = (props) => {
-  // style the card
-  // populate an image within it from a prop passed down to it
+  const { src, alt, shuffleCards, uniqid } = props;
   return (
     <div className="card">
-      <img
-        src={props.src}
-        alt={props.alt}
-        onClick={() => props.shuffleCards()}
-      ></img>
+      <img src={src} alt={alt} onClick={() => shuffleCards()} id={uniqid}></img>
     </div>
   );
 };

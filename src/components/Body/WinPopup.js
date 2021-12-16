@@ -14,7 +14,13 @@ const WinPopup = () => {
         <div className="win-content">
           <p>You Win!</p>
           <p>100% Match</p>
-          <div className="play-again">
+          <div
+            onClick={() => {
+              const self = document.querySelector('.dark-bg');
+              self.style.display = 'none';
+            }}
+            className="play-again"
+          >
             <div>
               <img className="small-icon" src={playicon} alt="play-icon" />
               <p>Play Again</p>
