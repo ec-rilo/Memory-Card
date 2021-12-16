@@ -1,6 +1,7 @@
 import { gbAllSelected, gbOneNotSelected } from '../mocks/allSelected';
 import { gbreceiveHit, gbreceiveHit2 } from '../mocks/receiveHit';
 import gbReset from '../mocks/reset';
+import gbResetHits from '../mocks/resetHits';
 
 describe('gameboard() tests', () => {
   test('function allSelected() returns true if all items in cardsArr are selected', () => {
@@ -32,5 +33,14 @@ describe('gameboard() tests', () => {
   test('function reset() resets the cardsArr to an empty array and doubleHit to false', () => {
     expect(gbReset.getCardsArr()).toEqual([]);
     expect(gbReset.getDoubleHit()).toBeFalsy();
+  });
+
+  test('function resetHits() resets doubleHit and all `selected` properties on cards in cardsArr to false', () => {
+    gbResetHits.resetHits();
+    expect(gbResetHits.isDoubleHit()).toBeFalsy();
+
+    for (let i = 0; i < 12; ++i) {
+      expect(gbResetHits.getCardsArr()[i]).toBeTruthy();
+    }
   });
 });

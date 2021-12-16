@@ -29,12 +29,26 @@ const gameboard = (() => {
     cardsArr = arr;
   };
 
+  const resetHits = () => {
+    doubleHit = false;
+    cardsArr.forEach((card) => {
+      if (card.selected === true) card.selected = false;
+    });
+  };
+
   const reset = () => {
     cardsArr = [];
     doubleHit = false;
   };
 
-  return { allSelected, updateCardsArr, receiveHit, isDoubleHit, reset };
+  return {
+    allSelected,
+    updateCardsArr,
+    receiveHit,
+    isDoubleHit,
+    reset,
+    resetHits,
+  };
 })();
 
 export default gameboard;
