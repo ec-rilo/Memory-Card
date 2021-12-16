@@ -21,19 +21,47 @@ const movieData = (() => {
     }
   };
 
-  const formatURLRequest = (data, index) => {
+  const formatURLRequest = (data, index, posterSize) => {
     const baseURL = data.config.images.base_url;
-    const posterSize = data.config.images.poster_sizes[1];
     const filePath = data.data.results[index].poster_path;
     return baseURL + posterSize + filePath;
   };
 
+  const getSmallPoster = (data) => {
+    return data.config.images.poster_sizes[1];
+  };
+
+  const getMediumPoster = (data) => {
+    return data.config.images.poster_sizes[2];
+  };
+
+  const getLargePoster = (data) => {
+    return data.config.images.poster_sizes[3];
+  };
+
   const getPosterData = async (index) => {
     const data = await getData();
-    const imgURL = formatURLRequest(data, index);
+
+    const smallPoster = getSmallPoster(data);
+    const mediumPoster = getMediumPoster(data);
+    const largePoster = getLargePoster(data);
+
+    const smallImgURL = formatURLRequest(data, index, smallPoster);
+    const mediumImgURL = formatURLRequest(data, index, mediumPoster);
+    const largeImgURL = formatURLRequest(data, index, largePoster);
+
     const imgAlt = data.data.results[index].original_title;
     const key = uniqid();
-    return { key: key, src: imgURL, alt: imgAlt, uniqid: key };
+    return {
+      key: key,
+      posterSizes: {
+        smallSrc: smallImgURL,
+        mediumSrc: mediumImgURL,
+        largeSrc: largeImgURL,
+      },
+      alt: imgAlt,
+      uniqid: key,
+    };
   };
 
   return { getPosterData };
