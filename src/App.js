@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <WinPopup />
-      <HeaderContent></HeaderContent>
+      <HeaderContent />
       <CardsContainer />
       <Footer />
     </div>
