@@ -3,6 +3,7 @@ import Card from './Card';
 import movieData from './Logic/TMDb';
 import shuffle from './Logic/Algorithms/shuffle';
 import game from '../../Logic/game';
+import MediaQuery, { useMediaQuery } from 'react-responsive';
 
 const CardsContainer = () => {
   const [cards, setCards] = useState([]);
@@ -43,14 +44,23 @@ const CardsContainer = () => {
     }
   });
 
+  const isMobile = useMediaQuery({ maxWidth: 750 });
+  const isTablet = useMediaQuery({ maxWidth: 1200 });
+  const isDesktop = useMediaQuery({ minWidth: 1200 });
+
   return (
     <section className="cards-container">
       {cards.map((card) => {
+        let posterSrc;
+        if (isDesktop) posterSrc = card.posterSizes.largeSrc;
+        if (isTablet) posterSrc = card.posterSizes.mediumSrc;
+        if (isMobile) posterSrc = card.posterSizes.smallSrc;
+
         return (
           <Card
             shuffleCards={shuffleCards}
             key={card.key}
-            src={card.src}
+            src={posterSrc}
             alt={card.alt}
             uniqid={card.uniqid}
           />
