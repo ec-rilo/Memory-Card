@@ -52,7 +52,7 @@ const game = (() => {
       tempCard.addEventListener('click', () => {
         gameboard.receiveHit(card.uniqid);
         if (gameboard.allSelected()) {
-          console.log('you win!');
+          showWin();
         } else if (!gameboard.isDoubleHit()) {
           scoreboard.incrementScore();
           screenScore.innerText = scoreboard.getScore();
