@@ -18,7 +18,7 @@ const game = (() => {
     const screenBestScore = document.querySelector('.best-score');
 
     scoreboard.reset();
-    gameboard.reset();
+    gameboard.resetHits();
     screenScore.innerText = scoreboard.getScore();
     screenBestScore.innerText = scoreboard.getBestScore();
   };
