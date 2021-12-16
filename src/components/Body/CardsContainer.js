@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Card from './Card';
 import movieData from './Logic/TMDb';
 import shuffle from './Logic/Algorithms/shuffle';
+import game from '../../Logic/game';
 
 const CardsContainer = () => {
   const [cards, setCards] = useState([]);
@@ -31,6 +32,16 @@ const CardsContainer = () => {
     setCards([...tempArr]);
     return;
   };
+
+  const firstUpdate = useRef(true);
+  useEffect(() => {
+    if (firstUpdate.current) {
+      firstUpdate.current = false;
+      return;
+    } else {
+      if (!game.isPlaying()) game.startGame(cards);
+    }
+  });
 
   return (
     <section className="cards-container">
