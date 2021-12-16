@@ -1,7 +1,5 @@
 import scoreboard from './scoreboard';
 import gameboard from './gameboard';
-import { renderToStaticMarkup } from 'react-dom/server';
-import WinPopup from '../components/Body/WinPopup';
 
 const game = (() => {
   let cardsArr = [];
