@@ -1,5 +1,7 @@
 import scoreboard from './scoreboard';
 import gameboard from './gameboard';
+import { renderToStaticMarkup } from 'react-dom/server';
+import WinPopup from '../components/Body/WinPopup';
 
 const game = (() => {
   let cardsArr = [];
@@ -14,10 +16,27 @@ const game = (() => {
   };
 
   const reset = () => {
+    const screenScore = document.querySelector('.score');
+    const screenBestScore = document.querySelector('.best-score');
+
     scoreboard.reset();
     gameboard.reset();
-    cardsArr = [];
-    playing = false;
+    screenScore.innerText = scoreboard.getScore();
+    screenBestScore.innerText = scoreboard.getBestScore();
+  };
+
+  const showWin = () => {
+    const winpopup = document.querySelector('.dark-bg');
+    winpopup.style.display = 'block';
+    const playAgain = document.querySelector('.play-again');
+
+    playAgain.addEventListener(
+      'click',
+      () => {
+        reset();
+      },
+      { once: true }
+    );
   };
 
   const startGame = (arr) => {
