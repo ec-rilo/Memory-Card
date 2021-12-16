@@ -1,6 +1,5 @@
 import { gbAllSelected, gbOneNotSelected } from '../mocks/allSelected';
 import { gbreceiveHit, gbreceiveHit2 } from '../mocks/receiveHit';
-import gbReset from '../mocks/reset';
 import gbResetHits from '../mocks/resetHits';
 
 describe('gameboard() tests', () => {
@@ -28,10 +27,6 @@ describe('gameboard() tests', () => {
 
   test('function isDoubleHit() returns true when a card calls receiveHit() twice', () => {
     expect(gbreceiveHit2.isDoubleHit()).toBeTruthy();
-  });
-
-  test('function reset() resets doubleHit to false', () => {
-    expect(gbReset.getDoubleHit()).toBeFalsy();
   });
 
   test('function resetHits() resets doubleHit and all `selected` properties on cards in cardsArr to false', () => {
