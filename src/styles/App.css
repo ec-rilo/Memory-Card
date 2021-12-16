@@ -62,6 +62,7 @@
 
   .card > img {
     display: block;
+    cursor: pointer;
   }
 
   .dark-bg {
