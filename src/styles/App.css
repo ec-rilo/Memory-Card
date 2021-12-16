@@ -2,8 +2,8 @@
 <---          LANDING           -->
 <--- -------------------------- -*/
 
-/* Mobile - Smallest Screen */
-@media (max-width: 360px) {
+/* Mobile Devices */
+@media (max-width: 750px) {
   /*-- -------------------------- -->
 	<---           HEADER           -->
 	<--- -------------------------- -*/
