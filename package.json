@@ -36,5 +36,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "<h1 align=\"center\">Movie Memory</h1>",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ec-rilo/Memory-Card.git"
+  },
+  "author": "Edgar Carrillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ec-rilo/Memory-Card/issues"
+  },
+  "homepage": "https://ec-movie-memory.netlify.app/"
 }
