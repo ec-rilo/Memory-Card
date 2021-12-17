@@ -1,11 +1,11 @@
 <h1 align="center">Movie Memory</h1>
 
 <p align="center" width="100%">
-    <img src="#">
+    <img src="./src/images/readme.md/movie-memory.png">
 </p>
 
 <h4 align="center">Built for testing memory retention!</h4>
-<p align="center"> <a href="#">[Redacted]</a></p>
+<p align="center"> <a href="https://ec-movie-memory.netlify.app/">Live >></a></p>
 
 ## Features
 This app allows the user to click on a unique movie title per game. It will keep the current score and the best score
@@ -13,10 +13,14 @@ per game. There is also use of the [TMDb API](https://www.themoviedb.org/documen
 populate the game. 
 
 ## Motivation and Story
-With this project I wanted to refresh my knowledge with API's and the respsective JavaScript needed to use them. As well
-as organizational skills needed prior to even touching code. Throughout the project you will see many tests using the 
-react-testing-library and jest as well as dynamic item creation with react. This project is also my first deep dive into
-using hooks and functional components heavily as I wanted to refine the skill of using them.
+With this project I wanted to refresh my knowledge with API's and broaden my scope of using React with hooks and functional
+components. As well as organizational skills needed prior to even touching code. Throughout the project there are tests created
+using jest as well as dynamic item creation with React. Being able to do a nice mix of JavaScript code and React was a focal point
+of this project. 
+
+Below you can see a portion of the roadmap I made to create this project.
+
+<img src="./src/images/readme.md/roadmap.png">
 
 ## Code Styles
 This project follows the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript).
@@ -34,6 +38,7 @@ Eslint and Prettier were also used in this project.
 - [npm](https://www.npmjs.com/)
 - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/)
 - [create-react-app](https://create-react-app.dev/)
+- [react-responsive](https://www.npmjs.com/package/react-responsive)
 
 ## Repository Installation
 ```
