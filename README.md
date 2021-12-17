@@ -42,7 +42,7 @@ Eslint and Prettier were also used in this project.
 
 ## Repository Installation
 ```
-$ git clone [redacted]
+$ git clone git@github.com:ec-rilo/Memory-Card.git
 ```
 
 ## Tests
